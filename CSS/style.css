@@ -1,0 +1,136 @@
+*{
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo-wrapper {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#siteLogo {
+    width: 120px;
+    height: auto;
+}
+
+.wrapper1 {
+    width: 30%;
+    height: 100vh;
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.wrapper1 h2 {
+    text-align: right;
+}
+
+.wrapper1 label {
+    align-self: baseline;
+    margin: 0 0 4px 0;
+}
+
+.wrapper1 select {
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 2rem;
+    text-align: end;
+    border: none;
+    border-radius: 8px;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+.wrapper1 select:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0 0 3px solid #0F5249;
+    text-align: start;
+}
+
+.wrapper1 select:checked {
+    background-color: #7fb0b5;
+    color: #fff;
+}
+
+.wrapper1 button {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    background-color: #063C41;
+    border-radius: 8px;
+    border: none;
+}
+
+.wrapper1 button:active{
+    background-color: #5E6CE4;
+    border:none;
+}
+
+.wrapper2 {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/Images/stages-background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.stages-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+.stage {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-size: 36px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+    background-color: #cccccc; 
+    z-index: 2;
+}
+
+.stage.active {
+    background-color: #0F5249;
+    border: 2px solid #0F5249; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.stage:not(.active) {
+    background-color: #cccccc;
+    color: #888888; 
+    border: 2px solid #cccccc;
+}
+
+.line {
+    width: 100px;
+    height: 2px; 
+    border-top: 2px dashed #0F5249; 
+    margin: 0 -5px; 
+}

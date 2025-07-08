@@ -1,0 +1,240 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo-wrapper {
+    position: relative;
+    top: 20px;
+    right: 20px;
+    padding: 0 0 30px 0;
+}
+
+#site-logo {
+    width: 120px;
+    height: auto;
+}
+
+.wrapper1 {
+    position: relative;
+    padding: 50px 20px 20px 20px;
+    margin: auto;
+    width: 30%;
+    max-width: 30%;
+    height: 100vh;
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper1 .saheb{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2.5rem;
+}
+
+.wrapper1 .input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper1 select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ccc;
+}
+
+.wrapper2 {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/Images/stages-background.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.stages-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+.stage {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    font-size: 36px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+    background-color: #cccccc; 
+    z-index: 2;
+}
+
+.stage.active {
+    background-color: #0F5249;
+    border: 2px solid #0F5249; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.stage:not(.active) {
+    background-color: #cccccc;
+    color: #888888; 
+    border: 2px solid #cccccc;
+}
+
+.line {
+    width: 100px;
+    height: 2px; 
+    border-top: 2px dashed #0F5249; 
+    margin: 0 -5px; 
+}
+
+.form-group{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label{
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background-color: #fff;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #555;
+    z-index: 2;
+}
+
+.form-group input{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 18px;
+    text-align: right;
+}
+
+.form-group input:focus{
+    border: 2px solid #083D33
+}
+
+.wrapper1 h2 {
+    text-align: right;
+}
+
+.wrapper1 label {
+    align-self: baseline;
+}
+
+.wrapper1 select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ccc;
+}
+
+.select-group{
+    width: 95%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.select-group label{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    background-color: none;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #555;
+    z-index: 2;
+}
+
+.select-group select{
+    padding: 20px 5px 5px 5px ;
+    margin-bottom: 8px;
+    text-align: start;
+    border: none;
+    background-color: #efefef;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+.wrapper1 button {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    color: #fff;
+    background-color: #063C41;
+    border-radius: 8px;
+    border: none;
+}
+
+.wrapper1 button:active{
+    background-color: #5E6CE4;
+    border:none;
+}
+
+.date-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.date-group label{
+    margin: 0 0 20px 0;
+}
+
+.date-group input{
+    width: 50%;
+    padding: 10px 5px 10px 5px;
+    margin: 0 0 50px 0;
+    align-self: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 18px;
+    text-align: center;
+    color: #5B94D6;
+}
+
+#phoneNumber {
+    direction: ltr;
+    text-align: start;
+}
+
+#phoneNumber::placeholder {
+    direction: rtl;
+    text-align: start;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}

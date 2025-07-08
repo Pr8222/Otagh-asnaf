@@ -1,0 +1,158 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background: #F5F7F7;
+}
+
+.main-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: fit-content;
+    background-color: #fff;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 8px;
+    margin: 30px 0 0 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 5rem;
+}
+
+.menu-item {
+    width: 80%;
+    border: none;
+    color: #606576;
+    background: none;
+    margin: 0px 0 5px 20px;
+    padding: 10px 20px 10px 5rem;
+    text-align: start;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #014E4F;
+    color: #fff;
+}
+
+.menu-item.active {
+    color: #fff;
+    background: #014E4F;
+}
+
+.details h1 {
+    color: #676675;
+    padding: 0 20px 30px 0;
+}
+
+.details h2 {
+    color: #676675;
+    padding: 0 0 20px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    vertical-align: center;
+}
+
+.section {
+    width: -webkit-fill-available;
+    padding: 0 20px 0 0;
+    color: #676675;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.job-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    align-items: stretch;
+}
+
+.job-card {
+    flex: 0 0 calc(50% - 10px); /* یعنی نصف عرض منهای فاصله */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    justify-content: start;
+    justify-items: start;
+    height: 250px;
+}
+
+.add-job {
+    flex: 0 0 calc(50% - 10px);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+    justify-content: center;
+    justify-items: center;
+    height: 250px;
+}
+
+.section button {
+    margin: 0 0 0 15px;
+    padding: 10px;
+    background-color: #063C41;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.job-card h2 {
+    padding: 0 20px 0 0;
+}
+
+.job-card p {
+    margin: 0;
+    padding: 0 20px 10px 0;
+    color: #606576;
+}
+
+.add-job h2 {
+    padding: 0 0 30px 0;
+}
+
+.add-job button {
+    border: none;
+    background-color: #fff;
+    width: 100%;
+    font-size: xx-large;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}

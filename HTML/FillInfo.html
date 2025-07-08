@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatibl" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>اتاق اصناف ایران</title>
+    <link rel="stylesheet" href="/CSS/FillInfo.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css">
+</head>
+
+<body>
+    <div class="wrapper1">
+        <div class="logo-wrapper">
+            <img src="/Images/اتاق-اصناف-ایران-1.png" alt="اتاق اصناف ایران" id="site-logo">
+        </div>
+        <p style="margin: 20px 0 0 0;">شهروند ایران</p>
+        <h2 style="margin: 0 0 20px 0;">تکمیل اطلاعات</h2>
+        <p>سامانه هوشمند صدور کارت شناسایی شاغلین واحیدن صنفی</p>
+        <div class="saheb">
+            <label for="owner">صاحب پروانه هستم</label>
+            <input type="checkbox" id="owner">
+        </div>
+        <div class="input">
+            <div class="form-group">
+                <label for="senf">شناسه صنفی</label>
+                <input type="number" id="senf">
+            </div>
+            <div class="select-group">
+                <label for="role">سمت</label>
+                <select name="semat" id="role">
+                    <option value="mobasher">مباشر</option>
+                    <option value="modir">مدیر</option>
+                    <option value="karmand">کارمند</option>
+                    <option value="kargar">کارگر</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nationalCode">کد ملی</label>
+                <input type="number" id="nationalCode">
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">شماره موبایل</label>
+                <input type="number" id="phoneNumber" placeholder="09*********">
+            </div>
+            <div class="date-group">
+                <label for="birthDate">تاریخ تولد</label>
+                <input type="text" id="birthDate" placeholder="انتخاب تاریخ">
+            </div>
+        </div>
+        <button id="nextPage">برو مرحله بعدی</button>
+    </div>
+    <div class="wrapper2">
+        <div class="stages-container">
+            <div class="stage" style="background-color: #C95627; border-color: #C95627; color: #fff;">
+                <i class='bx bx-globe'></i>
+            </div>
+            <div class="line"></div>
+            <div class="stage active">
+                <i class='bx bx-file' style='color:#ffffff'></i>
+            </div>
+            <div class="line"></div>
+            <div class="stage">
+                <i class='bx bx-user-check' style='color:#ffffff'></i>
+            </div>
+        </div>
+    </div>
+    <script src="/JS/jquery-3.7.1.js"></script>
+    <script src="https://unpkg.com/persian-date@1.1.0/dist/persian-date.min.js"></script>
+    <script src="https://unpkg.com/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
+    <script src="/JS/FillInfo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo-wrapper {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#site-logo {
+    width: 120px;
+    height: auto;
+}
+
+.wrapper1 {
+    padding: 0px 20px 0 20px;
+    margin: auto;
+    width: 30%;
+    max-width: 30%;
+    height: 100vh;
+    justify-content: center;
+    align-items: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper2 {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/Images/stages-background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.stages-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+.stage {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 36px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: #cccccc;
+    z-index: 2;
+}
+
+.stage.active {
+    background-color: #0F5249;
+    border: 2px solid #0F5249;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.stage:not(.active) {
+    background-color: #cccccc;
+    color: #888888;
+    border: 2px solid #cccccc;
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    border-top: 2px dashed #0F5249;
+    margin: 0 -5px;
+}
+
+.wrapper {
+    width: 95%; 
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding-right: 10px;
+}
+
+.wrapper h3 {
+    color: #7D7B8A;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background-color: #fff;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #555;
+    z-index: 2;
+}
+
+.form-group input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 18px;
+    text-align: right;
+}
+
+.form-group input::placeholder {
+    color: #E1E1E2;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #014E4F;
+    color: #fff;
+    border: none;
+}
+
+p {
+    color: #555;
+}
